@@ -149,6 +149,8 @@ class IntegratorUslugPrzestrzennych:
             self.toolbar.removeAction(action)
 
     def addService(self) -> None:
+        if self.dlg.is_table_empty:
+            return
         successfully_add = {}
         selected_urls = self.dlg.getSelectedServicesUrls()
         if not selected_urls:

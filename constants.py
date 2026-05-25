@@ -1,8 +1,14 @@
 REST_API_BASE_URL = 'https://rest.envirosolutions.pl/integrator'
 REST_ENDPOINT_COUNTRY = '/get-country-urls'
+REST_SERVICES_ENDPOINT = '/get-services-urls'
 RESULT_SERVICE_TAG = 'Service'
 
-ENCODING_SYSTEM = "utf-8"
+# REST API endpoints (nowe API)
+REST_DZIALKI_API_BASE_URL = "https://rest.envirosolutions.pl/dzialki"
+REST_ENDPOINT_VOIVODESHIP = "/getVoivodeship"
+REST_ENDPOINT_COUNTY = "/getCounty"
+REST_ENDPOINT_COMMUNE = "/getCommune"
+# REST_ENDPOINT_PRECINCT = "/getPrecinct"
 
 FEED_URL = 'https://qgisfeed.envirosolutions.pl/'
 
@@ -21,6 +27,8 @@ INDUSTRIES = {
     "it": 'IT',
     "n": 'Nieruchomości'
 }
+
+ENCODING_SYSTEM = "utf-8"
 
 RADIOBUTTONS_SERVICES = [
     'wms_rdbtn',
